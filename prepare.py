@@ -19,7 +19,7 @@ warnings.filterwarnings("ignore")
 # Add all 3 functions (or more) to prepare.py file
 # import into notebook and test functions
 
-def clean_telco_date(df):
+def clean_telco_data(df):
     ''' This function takes in the telco data and cleans it
     '''
     # drops duplicate columns if there are any present
