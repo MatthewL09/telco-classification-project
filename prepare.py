@@ -27,6 +27,9 @@ def clean_telco_data(df):
 
     # change dtype in column from string so it can be used
     df.total_charges = pd.to_numeric(df.total_charges, errors = 'coerce')
+
+    # adding a column of autopay customers to use for exploration later.
+    df['is_autopay'] = df.payment_type.map({'Electronic check': 0, 'Mailed check': 0, 'Bank transfer (automatic)':1, 'Credit card (automatic)': 1})
     
     # reassigning dataframe and dropping the null values
     df = df[df.total_charges.notnull()]
@@ -56,6 +59,7 @@ def clean_telco_data(df):
     # rename column names for clarity
 
     df.rename(columns ={ 'gender_Male': 'is_male',
+                        'senior_citizen': 'is_senior_citizen',
                         'partner_Yes': 'has_partner',
                         'dependents_Yes': 'has_dependents',
                         'online_security_Yes': 'online_security',
