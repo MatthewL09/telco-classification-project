@@ -5,17 +5,17 @@ PROJECT DETAILS FOR TELCO DATASET
     - Identify drivers of customer churn and find a solution to help improve customer retention
     - Construct a machine learning model that predicts churn so Telco can focus retention efforts on at risk customers 
 
-    Project Description
+2. Project Description
     - Telco Communications prides itself on customer satisfaction and quality of service. Maintaing a good reputation comes by focusing efforts on current customers and keeping up with patterns in the data. By reducing the rate at which customers churn we can help improve customer retention and increase company revenue. After identifying key drivers of churn Telco can then focus on improving customer experience and quality of product.
 
-    Initial Hypothesis/Questions
+3. Initial Hypothesis/Questions
 
     - What is the rate of churn for monthly contracts compared to 1 year and 2 year contracts?
     - Is there a length of tenure before customers decide to churn? 
     - Does service type play a key factor in the decision to churn? 
     - What is the average charge amount for customers who churn?
     
-    Data Dictionary
+4. Data Dictionary
 
     |Column | Description | Dtype|
     |--------- | --------- | ----------- |
@@ -55,7 +55,7 @@ PROJECT DETAILS FOR TELCO DATASET
     mailed_check_nonauto | whether a customer pays via mailed check | uint8 |
     is_autopay | whether a customer has autopay or not | uint8 |
 
-    Project Plan
+6. Project Plan
 
     Planning
     - Define goals
