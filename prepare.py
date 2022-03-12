@@ -47,7 +47,7 @@ def clean_telco_data(df):
 
     # dropping columns that are now duplicates, from the dummies created, or not needed
 
-    drop_cols = ['payment_type_id', 'internet_service_type_id', 'contract_type_id', 'customer_id',
+    drop_cols = ['payment_type_id', 'internet_service_type_id', 'contract_type_id', 
                 'gender', 'partner', 'dependents', 'online_security', 'phone_service',
                 'online_backup', 'device_protection', 'tech_support', 'streaming_tv',
                 'streaming_movies', 'paperless_billing', 'churn']
