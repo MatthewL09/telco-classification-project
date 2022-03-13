@@ -57,6 +57,63 @@ PROJECT DETAILS FOR TELCO DATASET
 
 6. Project Plan
 
+    Reproduce the 
+
     Planning
     - Define goals
     - Determine audience and delivery format
+    - Ask questions/formulate hypothesis
+    - what is my MVP?
+
+    Acquisition
+    - Create a function that establishes connection to telco_churn_db
+    - Create a function that holds your SQL query and reads results
+    - Creating functing for caching data and stores as .csv for ease
+    - Create and save in acquire.py so functions can be imported
+    - Test functions
+
+    Preparation
+    - Create a function that preps the acquired data
+    - This function will:
+        - remove duplicates columns 
+        - convert data types
+        - encoding categorical variables for machine learning
+        - empty values from new customers are dropped
+        - changes 'no internet service' values with 'no' for easier encoding
+        - renames columns
+    - Create a function that splits the data into 3 sets. Train, Validate, Test
+        - Split 20% (test data), 24% (validate data), and 56%(test data)
+    - Create functions and save in prepare.py to be easily imported
+    - Test functions
+    
+    Exploration
+    - Use the initial questions to guide the exploration process
+    - Create visualizations to help identify drivers
+    - Use statistical testing to confirm or deny hypothesis
+    - Save work with notations in telco_work.ipynb
+    - Document answers to questions as takewaways
+
+    Model
+    - Train model
+    - Make predictions
+    - Evaluate model
+    - Compute accuracy
+
+    Delivery
+    - Report is saved in Jupyter Notebook
+    - Presented via Zoom
+    - The audience is direct manager and their manager
+
+7. Recreation of Project:
+    - You will need an env file with database credentials saved to you working directory
+        - database credentials (username, password, hostname) 
+    - Create a gitignore with env file inside to prevent sharing of credentials
+    - Download the acquire.py and prepare.py files to working directory
+    - Create a final notebook to your working directory
+    - Review this README.md
+    - Libraries used are pandas, matplotlib, Scipy, sklearn, seaborn, and numpy
+    - Run telco_final.ipynb
+
+8. Key Findings and takeaways
+    - Customers who churn pay more per month than the average 
+     - 
