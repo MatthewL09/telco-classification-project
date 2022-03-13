@@ -31,7 +31,7 @@ def clean_telco_data(df):
     # adding a column of autopay customers to use for exploration later.
     df['is_autopay'] = df.payment_type.map({'Electronic check': 0, 'Mailed check': 0, 'Bank transfer (automatic)':1, 'Credit card (automatic)': 1})
     
-    # reassigning dataframe and dropping the null values
+    # reassigning dataframe and dropping the null values from 'total_charges' column
     df = df[df.total_charges.notnull()]
 
     # changing 'no internet service', which is present in a lot of columns, to 'no'
