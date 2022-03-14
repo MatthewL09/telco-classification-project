@@ -2,23 +2,24 @@ PROJECT DETAILS FOR TELCO DATASET
 
 1. Overview
     Project Goals
-    - Identify drivers of customer churn and find a solution to help improve customer retention
-    - Construct a machine learning model that predicts churn so Telco can focus retention efforts on at risk customers 
+    - Identify key drivers of customer churn and create a solution to help improve customer retention
+    - Construct a machine learning model that accurately predicts at risk customers so Telco can better focus its retention efforts 
 
 2. Project Description
-    - Telco Communications prides itself on customer satisfaction and quality of service. Maintaing a good reputation comes by focusing efforts on current customers and keeping up with patterns in the data. By reducing the rate at which customers churn we can help improve customer retention and increase company revenue. After identifying key drivers of churn Telco can then focus on improving customer experience and quality of product.
+    - Telco Communications prides itself on customer satisfaction and quality of service. Maintaing a good reputation comes by focusing on current customers and keeping up with emerging patterns in the data. By accurately predicting the at risk customers we can help improve customer retention and increase company revenue. Telco can then focus on improving customer experience and quality of product.
 
 3. Initial Hypothesis/Questions
 
-    - What is the rate of churn for monthly contracts compared to 1 year and 2 year contracts?
-    - Is there a length of tenure before customers decide to churn? 
+    - Does contract type have association with churn?
+    - What is the average length of tenure before customers decide to churn? 
     - Does service type play a key factor in the decision to churn? 
-    - What is the average charge amount for customers who churn?
+    - How much do customers pay per month?
     
 4. Data Dictionary
 
     |Column | Description | Dtype|
     |--------- | --------- | ----------- |
+    churn | the target variable: has churned or not | uint8 |
     customer_id | id number to identify cust | int64 |
     is_senior_citizen | whether customer is senior citizen | int64 |
     tenure | months with the company | int 64 |
@@ -39,7 +40,6 @@ PROJECT DETAILS FOR TELCO DATASET
     streaming_tv | whether customer streams tv or not | uint8  |
     streaming_movies | whether customer streams movies or not | uint |
     paperless_billing | whether customer has paperless billing or not | uint8 |
-    churn | whether customer has churned or not | uint8 |
     one_line | whether customer has one line or not | uint8 |
     no_phone_service | whether customer has no phone service or not | uint8 |
     has_multiple_lines | whether customer has multiple lines or not | uint8 |
@@ -57,7 +57,7 @@ PROJECT DETAILS FOR TELCO DATASET
 
 6. Project Plan
 
-    Reproduce the 
+    Recreate the plan by following these steps
 
     Planning
     - Define goals
@@ -113,7 +113,12 @@ PROJECT DETAILS FOR TELCO DATASET
     - Review this README.md
     - Libraries used are pandas, matplotlib, Scipy, sklearn, seaborn, and numpy
     - Run telco_final.ipynb
+    - Create a .csv file with the predictions from your ML model of at risk customers
 
 8. Key Findings and takeaways
-    - Customers who churn pay more per month than the average 
-     - 
+    - Customers who paying more than the average monthly rate are at higher risk of churn 
+    - Fiber optic internet service is associated with higher risk of churn
+    - Non autopay plans are at higher risk for churn
+    - Month to month contracts churn more than other long-term contracts
+    - The logistical regression model performed with 80% accuracy compared to the baseline accuracy of 73%
+    - 
