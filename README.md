@@ -20,7 +20,7 @@ PROJECT DETAILS FOR TELCO DATASET
     |Column | Description | Dtype|
     |--------- | --------- | ----------- |
     churn | the target variable: has churned or not | uint8 |
-    customer_id | id number to identify cust | int64 |
+    customer_id | unique id number to identify customer | int64 |
     is_senior_citizen | whether customer is senior citizen | int64 |
     tenure | months with the company | int 64 |
     multiple_lines | whether customer has more than one line | int 64 |
